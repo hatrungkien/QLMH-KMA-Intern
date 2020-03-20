@@ -1,6 +1,6 @@
-package com.controller.dao;
+package com.dao;
 
-import com.controller.HibernateUtils;
+import com.myutils.HibernateUtils;
 import com.model.entity.TblAssistantEntity;
 import com.model.entity.TblClassEntity;
 import com.model.entity.TblStudentEntity;
@@ -9,12 +9,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-public class ClassDAO implements DAO {
+public class ClassDAOImpl implements DAO {
     SessionFactory factory = new HibernateUtils().getSessionFactory();
     @Override
     public List<TblClassEntity> uc_ListAll() {

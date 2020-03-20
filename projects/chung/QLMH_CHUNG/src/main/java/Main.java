@@ -1,8 +1,7 @@
-import com.controller.dao.AssistantDAO;
-import com.controller.dao.ClassDAO;
-import com.controller.dao.StudentDAO;
-import com.controller.dao.TeacherDAO;
-import com.model.entity.TblClassEntity;
+import com.dao.AssistantDAOImpl;
+import com.dao.ClassDAOImpl;
+import com.dao.StudentDAO;
+import com.dao.TeacherDAO;
 
 import java.util.Scanner;
 

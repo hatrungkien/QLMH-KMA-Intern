@@ -1,6 +1,6 @@
-package com.controller.dao;
+package com.dao;
 
-import com.controller.HibernateUtils;
+import com.myutils.HibernateUtils;
 import com.model.entity.TblAssistantEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -8,7 +8,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class AssistantDAO implements DAO{
+public class AssistantDAOImpl implements AssistantDao {
     SessionFactory factory = new HibernateUtils().getSessionFactory();
     @Override
     public List<TblAssistantEntity> uc_ListAll() {

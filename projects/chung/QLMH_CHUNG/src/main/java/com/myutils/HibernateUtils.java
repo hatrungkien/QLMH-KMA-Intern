@@ -1,4 +1,4 @@
-package com.controller;
+package com.myutils;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

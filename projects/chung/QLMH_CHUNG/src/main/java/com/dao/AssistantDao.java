@@ -1,8 +1,8 @@
-package com.controller.dao;
+package com.dao;
 
 import java.util.List;
 
-public interface DAO<T> {
+public interface AssistantDao<T> extends DAO {
     List<T> uc_ListAll();
     void uc_ShowAll();
     void uc_Create(String name);

@@ -1,15 +1,12 @@
-package com.controller.dao;
+package com.dao;
 
-import com.controller.HibernateUtils;
-import com.model.entity.TblClassEntity;
+import com.myutils.HibernateUtils;
 import com.model.entity.TblStudentEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class StudentDAO implements DAO{
     SessionFactory factory = new HibernateUtils().getSessionFactory();

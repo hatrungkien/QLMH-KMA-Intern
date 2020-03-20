@@ -1,6 +1,6 @@
-package com.controller.dao;
+package com.dao;
 
-import com.controller.HibernateUtils;
+import com.myutils.HibernateUtils;
 import com.model.entity.TblTeacherEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
