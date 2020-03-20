@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Spring-Core-Hoang:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Spring_Core_Hoang_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Spring-Core-Hoang/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring-Core-Hoang" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
