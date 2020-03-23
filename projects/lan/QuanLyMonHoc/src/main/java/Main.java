@@ -13,7 +13,7 @@ public class Main {
         AssistantDAO assistant = new AssistantDAO();
         TeacherDAO teacher = new TeacherDAO();
         Scanner sc = new Scanner(System.in);
-        /*
+/*
         student.uc_Create("Nguyen Van A");
         student.uc_Create("Nguyen Van B");
         student.uc_Create("Nguyen Van C");

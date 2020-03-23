@@ -12,7 +12,6 @@
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">Admin123</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
-    <property name="hibernate.connection.autocommit">true</property>
     <property name="hibernate.jdbc.batch_size">50</property>
     <property name="hibernate.show_sql">true</property>
     <mapping class="com.model.entity.TblAssistantEntity"/>
