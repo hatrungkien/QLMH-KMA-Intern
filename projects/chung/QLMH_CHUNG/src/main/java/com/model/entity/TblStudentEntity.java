@@ -16,8 +16,12 @@ public class TblStudentEntity {
     private String name;
 
     //map voi Class
-    @ManyToMany(mappedBy = "tblStudentEntities")
-    private Set<TblClassEntity> ClassEntities = new HashSet<>();
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinTable(name = "student_class",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "class_id")
+    )
+    private Set<TblClassEntity> ClassEntities = new HashSet<>(0);
 
 
 

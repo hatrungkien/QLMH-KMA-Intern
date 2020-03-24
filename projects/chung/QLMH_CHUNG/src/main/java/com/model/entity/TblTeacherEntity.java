@@ -7,6 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "tbl_teacher", schema = "demo", catalog = "")
 public class TblTeacherEntity {
@@ -16,7 +18,14 @@ public class TblTeacherEntity {
     private String name;
 
     //map voi class
-    @ManyToMany(mappedBy = "tblTeacherEntities")
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinTable(name = "teacher_class",
+            joinColumns = @JoinColumn(name = "teacher_id"),
+            inverseJoinColumns = @JoinColumn(name = "student_id")
+    )
     private Set<TblClassEntity> ClassEntities;
 
+    public TblTeacherEntity(String name) {
+        this.name = name;
+    }
 }

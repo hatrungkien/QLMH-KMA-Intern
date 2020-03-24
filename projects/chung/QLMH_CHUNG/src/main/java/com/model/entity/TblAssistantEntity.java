@@ -16,7 +16,11 @@ public class TblAssistantEntity {
     private String name;
 
     //map voi Class
-    @ManyToMany(mappedBy = "tblAssistantEntities")
-    private Set<TblClassEntity> ClassEntities;
+    @ManyToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JoinTable(name = "assistant_class",
+            joinColumns = @JoinColumn(name = "assistant_id"),
+            inverseJoinColumns = @JoinColumn(name = "class_id")
+    )
+    private Set<TblClassEntity> ClassEntities = new HashSet<>(0);
 
 }
